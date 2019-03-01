@@ -7,10 +7,6 @@ class Dog extends Animal implements Comparable<Dog>{
 	return name + ", " + numLegs;
     }
 
-    public int getLegs(){
-	return numLegs;
-    }
-
     public int compareTo(Dog d1){
 	if(this.numLegs == d1.numLegs){
 	    return this.name.compareTo(d1.name);
