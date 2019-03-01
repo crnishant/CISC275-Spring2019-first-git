@@ -2,9 +2,13 @@ class Dog extends Animal implements Comparable<Dog>{
     public Dog(String newName, int newLegs){
 	name = newName;
 	numLegs = newLegs;
-    }x
+    }
     public String toString(){
 	return name + ", " + numLegs;
+    }
+
+    public int getLegs(){
+	return numLegs;
     }
 
     public int compareTo(Dog d1){
